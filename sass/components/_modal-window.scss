@@ -13,12 +13,11 @@
     transform: scale(0);
   }
   transform: scale(1);
-  transition: opacity 400ms linear, transform 400ms linear,
-    visibility 400ms linear;
+  transition: opacity 400ms linear, transform 400ms linear, visibility 400ms linear;
 }
 
 .modal-window {
-  width: 528px;
+  // width: 528px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -34,4 +33,22 @@
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 1199px) {
+  .modal-window {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .modal-window {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-window {
+    width: 528px;
+  }
 }

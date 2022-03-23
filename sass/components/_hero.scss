@@ -1,5 +1,5 @@
-.container {
-  &__hero {
+.hero {
+  &__container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,14 +7,11 @@
 }
 
 .hero {
-  max-width: 1600px;
+  // max-width: 1600px;
   margin: 0 auto;
-  padding: 200px 0;
+  // padding: 200px 0;
   background-color: $bg-color-hero-section;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/bg-hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -22,13 +19,42 @@
 }
 
 .main-title {
-  width: 700px;
+  // width: 700px;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  // font-size: 44px;
+  // line-height: 1.36;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
   color: $on-dark-bg-color-text;
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    max-width: 480px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .hero {
+    padding: 118px 0;
+  }
+  .main-title {
+    width: 360px;
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    padding: 200px 0;
+  }
+  .main-title {
+    width: 700px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }

@@ -1,5 +1,6 @@
 .what-we-do-section {
-  padding: 94px 0;
+  padding-top: 47px;
+  padding-bottom: 94px;
 }
 
 .what-we-do__list {
@@ -25,4 +26,10 @@
   text-transform: uppercase;
   color: $on-dark-bg-color-text;
   background-color: rgba(47, 48, 58, 0.8);
+}
+
+@media screen and (max-width: 1199px) {
+  .what-we-do-section {
+    display: none;
+  }
 }
