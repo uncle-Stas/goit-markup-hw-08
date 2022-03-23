@@ -1,0 +1,43 @@
+.reqest-form__label-checkbox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $second-color-text;
+}
+
+.reqest-form__icon-checkbox {
+  margin-right: 7px;
+  margin-bottom: 4px;
+  width: 16px;
+  height: 15px;
+  background-image: url(../images/modal-box1.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  outline-color: transparent;
+  transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .reqest-form__checkbox:focus + & {
+    outline: $hover-color-text 3px solid;
+    box-sizing: content-box;
+    border-radius: 2px;
+  }
+
+  .reqest-form__checkbox:checked + & {
+    background-image: url(../images/modal-check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 2px;
+    background-color: $hover-color-text;
+  }
+}
+
+.reqest-form__checkbox {
+  @extend %visually-hidden;
+}

@@ -1,0 +1,28 @@
+.logo {
+  font-family: $logo-font-family;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.header__logo {
+  margin-right: 93px;
+  &--first-color {
+    color: $first-logo-color;
+  }
+  &--second-color {
+    color: $second-logo-color;
+  }
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+  &--first-color {
+    color: $hover-color-text;
+  }
+  &--second-color {
+    color: $on-dark-bg-color-text;
+  }
+}
