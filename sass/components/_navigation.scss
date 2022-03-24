@@ -10,6 +10,14 @@
 }
 
 @media screen and (max-width: 767px) {
+  .navigation__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  .navigation__link {
+    font-size: 40px;
+    line-height: 1.175;
+  }
 }
 
 //

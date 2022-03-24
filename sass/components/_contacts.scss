@@ -10,6 +10,23 @@
 }
 
 @media screen and (max-width: 767px) {
+  .contacts {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .contacts__link {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  .contacts__item:last-child {
+    .contacts__link {
+      font-size: 34px;
+      line-height: 1.17;
+      color: $hover-color-text;
+    }
+  }
 }
 
 //
