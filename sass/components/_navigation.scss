@@ -10,6 +10,10 @@
 }
 
 @media screen and (max-width: 767px) {
+  .navigation {
+    margin-bottom: 40px;
+  }
+
   .navigation__item:not(:last-child) {
     margin-bottom: 32px;
   }

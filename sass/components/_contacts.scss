@@ -13,6 +13,8 @@
   .contacts {
     display: flex;
     flex-direction: column-reverse;
+    margin-top: auto;
+    margin-bottom: 64px;
   }
 
   .contacts__link {
@@ -21,9 +23,9 @@
   }
 
   .contacts__item:last-child {
+    margin-bottom: 32px;
     .contacts__link {
       font-size: 34px;
-      line-height: 1.17;
       color: $hover-color-text;
     }
   }

@@ -13,26 +13,32 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body>
+  <body data-menu-body>
     <header class="header">
       <div class="container header__container">
         <a class="logo header__logo" href="./index.html"
           ><span class="header__logo--first-color">Web</span
           ><span class="header__logo--second-color">Studio</span></a
         >
-        <button class="mobile-menu-open-btn" type="button">
-          <svg class="mobile-menu-open-btn__icon" width="40" height="40">
+        <button
+          class="mobile-menu-btn"
+          type="button"
+          aria-label="Кнопка открытия мобильного меню"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg class="mobile-menu-btn__icon" width="40" height="40">
             <use
-              class="mobile-menu-open-btn__icon--open"
+              class="mobile-menu-btn__icon--open"
               href="./images/sprite.svg#icon-mobile-menu-open"
             ></use>
             <use
-              class="mobile-menu-open-btn__icon--close"
+              class="mobile-menu-btn__icon--close"
               href="./images/sprite.svg#icon-mobile-menu-close"
             ></use>
           </svg>
         </button>
-        <div class="mobile-menu-backdrop">
+        <div class="mobile-menu-backdrop" data-menu>
           <div class="mobile-menu">
             <nav class="navigation">
               <ul class="navigation__list-link">
@@ -68,16 +74,16 @@
               </li>
             </ul>
             <ul class="mobile-social-links">
-              <li class=".mobile-social-links__item">
+              <li class="mobile-social-links__item">
                 <a class="mobile-social-links__link" href="">Instagram</a>
               </li>
-              <li class=".mobile-social-links__item">
+              <li class="mobile-social-links__item">
                 <a class="mobile-social-links__link" href="">Twitter</a>
               </li>
-              <li class=".mobile-social-links__item">
+              <li class="mobile-social-links__item">
                 <a class="mobile-social-links__link" href="">Facebook</a>
               </li>
-              <li class=".mobile-social-links__item">
+              <li class="mobile-social-links__item">
                 <a class="mobile-social-links__link" href="">LinkedIn</a>
               </li>
             </ul>
@@ -531,13 +537,16 @@
           <label class="reqest-form__label-checkbox">
             <input type="checkbox" class="reqest-form__checkbox" />
             <span class="reqest-form__icon-checkbox"></span>
-            <span>Соглашаюсь с рассылкой и принимаю</span>&nbsp;
-            <a href="" class="reqest-form__agreement-link">Условия договора</a>
+            <span
+              >Соглашаюсь с рассылкой и принимаю&nbsp;
+              <a href="" class="reqest-form__agreement-link">Условия договора</a></span
+            >
           </label>
           <button class="reqest-form__button" type="submit">Отправить</button>
         </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

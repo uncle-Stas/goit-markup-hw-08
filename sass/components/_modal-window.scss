@@ -1,9 +1,11 @@
 .backdrop {
   position: fixed;
+  z-index: 15;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
   background-color: rgba(0, 0, 0, 0.2);
 
   &--is-hidden {
@@ -16,11 +18,17 @@
   transition: opacity 400ms linear, transform 400ms linear, visibility 400ms linear;
 }
 
+.body-hide {
+  overflow: hidden;
+}
+
 .modal-window {
-  // width: 528px;
   position: absolute;
   top: 50%;
   left: 50%;
+  min-height: 320px;
+  max-height: calc(100vh - 30px);
+  overflow: auto;
   transform: translate(-50%, -50%);
   padding: 40px;
   background-color: #ffffff;
@@ -43,7 +51,7 @@
 
 @media screen and (max-width: 479px) {
   .modal-window {
-    width: 100%;
+    width: calc(100% - 30px);
   }
 }
 

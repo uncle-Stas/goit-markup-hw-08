@@ -3,6 +3,7 @@
     openModalBtn: document.querySelector("[data-modal-open]"),
     closeModalBtn: document.querySelector("[data-modal-close]"),
     modal: document.querySelector("[data-modal]"),
+    bodyHide: document.querySelector("[data-menu-body]"),
   };
 
   refs.openModalBtn.addEventListener("click", toggleModal);
@@ -10,5 +11,6 @@
 
   function toggleModal() {
     refs.modal.classList.toggle("backdrop--is-hidden");
+    refs.bodyHide.classList.toggle("body-hide");
   }
 })();
