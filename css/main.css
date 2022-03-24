@@ -481,13 +481,16 @@ body {
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
 }
 
-.header__logo {
-  margin-right: 93px;
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .header__logo--first-color {
@@ -515,35 +518,19 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-.header__container {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.navigation {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.navigation__list-link {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.navigation__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .navigation__link {
-  position: relative;
-  display: block;
-  padding: 32px 0;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
 }
@@ -552,43 +539,120 @@ body {
   color: #2196f3;
 }
 
-.navigation__link--current::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  height: 4px;
-  width: 100%;
-  display: block;
-  background-color: #2196f3;
-  border-radius: 2px;
+@media screen and (min-width: 768px) {
+  .navigation {
+    margin-left: 88px;
+  }
+  .navigation__list-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navigation__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .navigation__link {
+    position: relative;
+    display: block;
+    padding: 32px 0;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  .navigation__link--current::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    display: block;
+    background-color: #2196f3;
+    border-radius: 2px;
+  }
 }
 
-.contacts {
-  margin-left: auto;
-}
-
-.contacts__item:first-child {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .navigation {
+    margin-left: 94px;
+  }
 }
 
 .contacts__link {
-  padding: 32px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
 }
 
 .contacts__icon {
-  margin-right: 10px;
-  fill: currentColor;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  .contacts__icon {
+    display: block;
+    fill: currentColor;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 84px;
+  }
+  .contacts__item:first-child {
+    margin-bottom: 10px;
+  }
+  .contacts__icon {
+    display: block;
+    margin-right: 8px;
+    fill: currentColor;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 305px;
+  }
+  .contacts__item:first-child {
+    margin-right: 30px;
+  }
+  .contacts__link {
+    padding: 32px 0;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  .contacts__icon {
+    margin-right: 10px;
+  }
 }
 
 .hero__container {
@@ -1497,6 +1561,14 @@ body {
   .reqest-form__label-checkbox {
     font-size: 14px;
     line-height: 1.71;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
