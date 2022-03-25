@@ -34,7 +34,9 @@
 .example-of-work__meta {
   padding: 20px 24px;
   box-sizing: border-box;
-  border: 1px solid $example-of-work-border-color;
+  border-left: 1px solid $example-of-work-border-color;
+  border-bottom: 1px solid $example-of-work-border-color;
+  border-right: 1px solid $example-of-work-border-color;
 }
 
 .example-of-work__name {
