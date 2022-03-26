@@ -11,6 +11,11 @@
   background-color: $bg-color-hero-section;
   // background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
   //   url(../images/bg-hero.jpg);
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4),
+    url('../images/bg-header-img/header-mobile-img.jpg')
+  );
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -28,19 +33,14 @@
 @media screen and (max-width: 767px) {
   .hero {
     max-width: 480px;
-    background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4),
-      url(../images/bg-header-img/header-mobile-img.jpg)
-    );
 
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4),
-        url(../images/bg-header-img/header-mobile-img@2x.jpg)
-      );
-    }
+    // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    //   background-image: linear-gradient(
+    //     rgba(47, 48, 58, 0.4),
+    //     rgba(47, 48, 58, 0.4),
+    //     url(../images/bg-header-img/header-mobile-img@2x.jpg)
+    //   );
+    // }
   }
 }
 
