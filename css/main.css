@@ -833,9 +833,25 @@ body {
   color: #757575;
 }
 
+.advantages__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -15px;
+}
+
+.advantages__item {
+  margin: 15px;
+}
+
 @media screen and (max-width: 767px) {
   .advantages__item {
     width: 100%;
+  }
+  .advantages__title {
+    text-align: center;
   }
 }
 
@@ -846,20 +862,8 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .advantages__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin: -15px;
-  }
   .advantages__item {
     width: calc((100% - 60px) / 2);
-    margin: 15px;
   }
 }
 
@@ -918,6 +922,11 @@ body {
 }
 
 .our-team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: -15px;
 }
 
@@ -971,13 +980,6 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .our-team__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
   .our-team__item {
     width: calc((100% - 60px) / 2);
   }
@@ -1293,6 +1295,11 @@ body {
 }
 
 .examples-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: -15px;
 }
 
@@ -1336,13 +1343,6 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 30px;
-  }
-  .examples-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   .examples-list__item {
     width: calc((100% - 60px) / 2);
@@ -1670,6 +1670,7 @@ body {
 .reqest-form__icon-checkbox {
   margin-right: 7px;
   margin-bottom: 4px;
+  min-width: 16px;
   width: 16px;
   height: 15px;
   background-image: url(../images/modal-box1.svg);

@@ -27,9 +27,22 @@
   color: $second-color-text;
 }
 
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+.advantages__item {
+  margin: 15px;
+}
+
 @media screen and (max-width: 767px) {
   .advantages__item {
     width: 100%;
+  }
+
+  .advantages__title {
+    text-align: center;
   }
 }
 
@@ -40,15 +53,8 @@
 }
 
 @media screen and (min-width: 768px) {
-  .advantages__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: -15px;
-  }
   .advantages__item {
     width: calc((100% - 60px) / 2);
-    margin: 15px;
   }
 }
 

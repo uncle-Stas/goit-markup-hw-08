@@ -1,9 +1,10 @@
 .our-team-section {
-  // padding: 94px 0;
   background-color: $bg-color-our-team-section;
 }
 
 .our-team__list {
+  display: flex;
+  flex-wrap: wrap;
   margin: -15px;
 }
 
@@ -50,10 +51,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .our-team__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
   .our-team__item {
     width: calc((100% - 60px) / 2);
   }
