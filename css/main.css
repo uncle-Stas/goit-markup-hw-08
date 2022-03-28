@@ -1305,17 +1305,14 @@ body {
 
 .examples-list__item {
   margin: 15px;
-}
-
-.examples-list__link {
-  display: block;
+  border: 1px solid #eeeeee;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.examples-list__link:hover, .examples-list__link:focus {
+.examples-list__item:hover, .examples-list__item:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -1361,12 +1358,6 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .examples-list__item:first-child .example-of-work__meta {
-    padding-bottom: 56px;
-  }
-}
-
 .example-of-work {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1375,19 +1366,16 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
 }
 
 .examples-of-work__overlay {
   position: relative;
-  width: 100%;
   overflow: hidden;
 }
 
 .example-of-work__backdrop {
   position: absolute;
   width: 100%;
-  height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1413,9 +1401,6 @@ body {
   padding: 20px 24px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-left: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
 }
 
 .example-of-work__name {
